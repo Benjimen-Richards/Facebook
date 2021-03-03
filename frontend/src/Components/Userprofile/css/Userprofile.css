@@ -1,0 +1,15 @@
+.Userprofile_container {
+  position: relative;
+  /* border: 1px solid white; */
+  height: 75vh;
+  overflow: hidden;
+}
+
+@media all and (max-width: 500px) {
+  .Userprofile_container {
+    position: relative;
+    /* border: 1px solid white; */
+    height: 72vh;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,26 @@
+.sidebar_container {
+  width: 20rem;
+  height: max-content;
+  padding-top: 30px;
+  /* border: 1px solid white; */
+  flex-wrap: wrap;
+}
+.sidebar_container ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.sidebar_container li {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  height: 40px;
+  text-align: start;
+  /* border: 1px solid white; */
+}
+
+@media all and (max-width: 1200px) {
+  .sidebar_container {
+    display: none;
+  }
+} ;

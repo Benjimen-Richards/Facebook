@@ -1,0 +1,96 @@
+.Cover_container {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  /* border: 1px solid black; */
+}
+.Cover_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  z-index: -1;
+  object-position: 30% 5%;
+  /* border: 1px solid white; */
+}
+.Cover_img {
+  width: 100%;
+  height: 50vh;
+  padding-left: 70px;
+  padding-right: 70px;
+  /* object-position: 50% -20%; */
+
+  /* border: 1px solid white; */
+}
+.User_name {
+  position: absolute;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90px;
+  top: 50vh;
+  background-color: #242526;
+  padding: 16px 12px 0px;
+}
+.User_name span {
+  color: #e4e6eb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+}
+.User_name p {
+  color: #2e89ff;
+}
+.profile_image img {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+}
+.profile_image {
+  position: absolute;
+  top: 60%;
+  left: 43%;
+}
+.image_icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  color: white;
+}
+.profile_icon {
+  position: absolute;
+  bottom: 35%;
+  right: 25%;
+}
+@media all and (max-width: 500px) {
+  .profile_image {
+    position: absolute;
+    top: 78%;
+    left: 35%;
+  }
+  .profile_image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .User_name span {
+    color: #e4e6eb;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+  }
+  .Cover_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    z-index: -1;
+    object-position: 50%;
+    /* border: 1px solid white; */
+  }
+  .Cover_img {
+    width: 100%;
+    height: 50vh;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

@@ -1,0 +1,55 @@
+.Operations_container button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  width: 100px;
+  height: 60px;
+  outline: none;
+}
+
+.Operations_container {
+  position: absolute;
+  top: 62vh;
+  background-color: #242526;
+  width: 100%;
+  height: 100px;
+  padding: 0px 16px;
+  flex-wrap: wrap;
+}
+.pages_nav {
+  display: flex;
+  justify-content: space-around;
+}
+.pages_nav_left {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid white; */
+  width: 700px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.pages_nav_right {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+@media all and (max-width: 500px) {
+  .Operations_container {
+    position: absolute;
+    top: 60vh;
+    background-color: #242526;
+    width: 100%;
+    height: 100px;
+    padding: 0px 16px;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+    display: flex;
+    overflow: scroll;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

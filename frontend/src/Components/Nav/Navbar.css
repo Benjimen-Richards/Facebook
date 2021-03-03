@@ -1,0 +1,144 @@
+.nav_container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  z-index: +1;
+  background-color: #242526;
+  margin-bottom: 5px;
+}
+
+.nav_icons {
+  width: 50px;
+  height: 50px;
+}
+.nav_icons2 {
+  width: 30px;
+  height: 30px;
+}
+.nav_icons3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  padding: 10px;
+}
+.fblogo {
+  padding-left: 10px;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid whitesmoke; */
+}
+.fblogo input {
+  background-color: #3a3b3c;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  height: 45px;
+  margin-top: 1%;
+  margin-left: -2%;
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 7px 16px 8px 10px;
+}
+.navbar_icons {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.userProfile_div {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fblogo img {
+  width: 70px;
+  height: 50px;
+}
+#more_options {
+  position: relative;
+}
+.dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: -350px;
+  width: 300px;
+  height: max-content;
+  padding: 0px 8px;
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  background-color: #3a3b3c;
+  z-index: +1;
+}
+.dropdown li {
+  /* border: 1px solid white; */
+  height: 52px;
+  padding: 0px 8px;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dropdown_button {
+  display: none;
+}
+@media all and (max-width: 500px) {
+  .navbar_icons {
+    display: none;
+  }
+  .userProfile_div {
+    display: none;
+  }
+  .fblogo {
+    width: 100%;
+  }
+  .fblogo input {
+    border: none;
+    padding: 10px;
+    margin: 0%;
+    margin-top: 0%;
+    border-radius: 10px;
+    width: 70%;
+    height: 50px;
+    background-color: #3a3b3c;
+  }
+  #more_options {
+    position: relative;
+  }
+  .dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: -300px;
+    width: 260px;
+    height: max-content;
+    padding: 0px 8px;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    background-color: #3a3b3c;
+  }
+  .dropdown li {
+    height: 52px;
+    padding: 0px 8px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .dropdown_button {
+    display: block;
+    width: 50px;
+    margin-left: -30px;
+    margin-top: 5px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+    padding: 10px;
+  }
+}

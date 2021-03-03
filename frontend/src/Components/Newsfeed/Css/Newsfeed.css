@@ -1,0 +1,30 @@
+.Newsfeed_container {
+  background-color: rgb(31, 28, 28);
+  margin-top: 0%;
+  min-height: 100vh;
+  max-height: max-content;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  padding-left: -100px;
+  padding-right: 100px;
+}
+.content {
+  border-radius: 10px;
+  padding-top: 50px;
+}
+@media all and (max-width: 500px) {
+  .Newsfeed_container {
+    background-color: rgb(31, 28, 28);
+    min-height: 100vh;
+    max-height: max-content;
+    display: flex;
+    /* flex-direction: row; */
+  }
+  .sidebar {
+    display: none;
+  }
+  .content {
+    width: 100%;
+  }
+}

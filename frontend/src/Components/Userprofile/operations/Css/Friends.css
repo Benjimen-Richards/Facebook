@@ -1,0 +1,10 @@
+.Friends_container {
+  position: absolute;
+  /* top: 83%; */
+  width: 100%;
+  background-color: #18191a;
+  min-height: 800px;
+  max-height: max-content;
+  display: flex;
+  padding: 0px 70px;
+}

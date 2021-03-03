@@ -1,0 +1,29 @@
+.contacts_container {
+  /* border: 1px solid white; */
+  width: 20rem;
+  padding: 8px 0px 0px;
+  margin-right: -6rem;
+  height: 600px;
+  overflow-y: scroll;
+  margin-top: 40px;
+}
+.contacts_container li {
+  list-style: none;
+  text-align: start;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 10px;
+  margin: 15px;
+}
+.birthday h3 {
+  text-align: start;
+}
+.birthday div {
+  text-align: start;
+  padding: 0px 8px;
+}
+@media all and (max-width: 800px) {
+  .contacts_container {
+    display: none;
+  }
+}
