@@ -16,6 +16,10 @@ userroute.post('/register',async(req,res)=>
     data.save().then(()=>res.send("Registration success"))
     .catch(err=>console.log(err))
 })
-
+userroute.get('/users',(req,res)=>
+{
+    user.find({}).then((data)=>res.send(data))
+   .catch(err=>console.log(err))
+})
 
 module.exports=userroute

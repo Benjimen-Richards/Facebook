@@ -1,46 +1,40 @@
-import React, { Component } from 'react'
+import {Component} from 'react'
 import axios from 'axios'
-const registerUrl ='http://localhost:1111/user/register'
-class Rough extends Component {
+const imageUrl ='http://localhost:1111/cloud'
+class Rough extends Component
+{
     constructor()
     {
         super()
-        this.state={
-            firstname:'',
-            lastname:'',
-            phone:'',
-            email:'',
-            password:'',
-            dob:'',
-            gender:'',
-        }
+        this.state = {
+            selectedFile: null
+          }
     }
-    changehandler=(e)=>
-    {
-        this.setState({[e.target.name]:e.target.value})
-    }
-    buttonhandler=()=>
-    {
-        // console.log(this.state)
-        axios.post(registerUrl,this.state).then(res=>console.log("postdata",res.data))
-    }
+    submithandler = () => {
+        console.log(this.state.selectedFile)
 
+
+
+
+        axios.post(imageUrl, this.state.selectedFile).then(res => { // then print response status
+            console.log(res.statusText)
+       })
+    }
+    changehandler=(event)=>
+    {
+        this.setState({
+            selectedFile: event.target.files[0],
+            loaded: 0,
+          })
+    }
     render()
     {
-        return (
-            <div>
-        <input placeholder='firstname' onChange={this.changehandler} name="firstname" value={this.state.firstname}/>
-        <input placeholder='lastname' onChange={this.changehandler} name="lastname" value={this.state.lastname}/>
-        <input placeholder='phone' onChange={this.changehandler} name="phone" value={this.state.phone}/>
-        <input placeholder='email' onChange={this.changehandler} name="email" value={this.state.email}/>
-        <input placeholder='password' onChange={this.changehandler} name="password" value={this.state.password}/>
-        <input type='date' placeholder='dob' onChange={this.changehandler} name="dob" value={this.state.dob}/>
-        <input placeholder='gender' onChange={this.changehandler} name="gender" value={this.state.gender}/>
-        <button onClick={this.buttonhandler}>Submit</button>
+        return(
+            <div method="POST" encType="multipart/form-data" >
+                <input type='file' name='file' onChange={this.changehandler}/>
+                <button  onClick={this.submithandler}>Click</button>
             </div>
         )
     }
-    
 }
-
 export default Rough
