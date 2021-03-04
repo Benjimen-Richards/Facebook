@@ -30,7 +30,7 @@ class Operations extends Component
     <hr style={{width:'80%',color:'white',marginLeft:'10%'}}/>
                 <div className='pages_nav'>
                 <div className='pages_nav_left'>
-                    <Link to='/profile/bio'>
+                    <Link to='/profile'>
                     <button>Posts</button>
                     </Link>
                     <Link to='/profile/friends'><button>Friends</button></Link>
