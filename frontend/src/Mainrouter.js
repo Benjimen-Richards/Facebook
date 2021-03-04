@@ -6,7 +6,7 @@ import Navbar from './Components/Nav/Navbar';
 import Newsfeed from './Components/Newsfeed/Newsfeed';
 import Rough from './Rough';
 import Error from './Components/Error'
-
+import Register from './Components/Register/Register'
 function Mainrouter() {
   return (
     <div className="App">
@@ -15,6 +15,7 @@ function Mainrouter() {
         <Route path='/'exact component={Homepage}/>
         <Route path='/profile'  component={Userprofile}/>
         <Route path='/feed' component={Newsfeed}/>
+        <Route path='/register' component={Register}/>
         <Route path='/play' component={Rough}/>
       </BrowserRouter>
     </div>
