@@ -1,5 +1,5 @@
 import './Navbar.css'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {AiOutlineHome} from 'react-icons/ai'
 import {BsCameraVideo} from 'react-icons/bs'
 import {IoStorefrontOutline} from 'react-icons/io5'
@@ -11,8 +11,10 @@ import {IoMdNotificationsOutline} from 'react-icons/io'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {AiFillCaretDown} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+
 const Navbar = () => {
     const [visible, setvisible] = useState('none')
+    const [urlvisible,seturlvisible]=useState("none")
     const displayhandler=()=>
     {
         if(visible==='none')
@@ -24,8 +26,19 @@ const Navbar = () => {
             setvisible("none")
         }
     }
+    useEffect(()=>
+    {
+        if(window.location.pathname==='/')
+        {
+            seturlvisible('none')
+        }
+        else
+        {
+            seturlvisible('flex')
+        }
+    })
     return (
-        <div className='nav_container'>
+        <div className='nav_container' style={{display:urlvisible}}>
             <div className='fblogo'>
             <Link to='/feed'><img src='https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png'  alt='/'/></Link>
             <input placeholder='enter to search'/>
