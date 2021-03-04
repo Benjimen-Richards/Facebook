@@ -16,3 +16,27 @@ image:'https://scontent.fhyd5-1.fna.fbcdn.net/v/t1.0-9/68243270_1565531443584054
 likes:'284',
 comment:'100',}]
 export default postdata
+
+export const users=[
+    {name:'alfred'},
+    {name:'richards'},
+    {name:'c'},
+    {name:'donald'},
+    {name:'f'},
+    {name:'ultra'},
+    {name:'kumari'},
+    {name:'l'},
+    {name:'merina'},
+    {name:'n'},
+    {name:'o'},
+    {name:'p'},
+    {name:'q'},
+    {name:'r'},
+    {name:'s'},
+    {name:'t'},
+    {name:'w'},
+    {name:'x'},
+    {name:'y'},
+    {name:'z'}
+
+]

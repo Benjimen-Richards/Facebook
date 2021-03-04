@@ -8,7 +8,27 @@
   background-color: #242526;
   margin-bottom: 5px;
 }
+.searchlist {
+  position: absolute;
+  background-color: #242526;
+  top: 8%;
+  left: 0px;
+  width: 28%;
+  border-radius: 10px;
+  z-index: +1;
+}
 
+.searchlist li {
+  list-style: none;
+  text-align: start;
+  padding: 18px;
+  font-size: 15px;
+  color: #e4e6eb;
+  height: 50px;
+}
+.searchlist li:hover {
+  background-color: #3a3b3c;
+}
 .nav_icons {
   width: 50px;
   height: 50px;
@@ -89,6 +109,9 @@
   display: none;
 }
 @media all and (max-width: 500px) {
+  .searchlist {
+    width: 100%;
+  }
   .navbar_icons {
     display: none;
   }

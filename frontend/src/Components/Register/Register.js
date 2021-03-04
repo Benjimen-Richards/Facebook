@@ -69,9 +69,9 @@ class Register extends Component {
             </center>
             <h5 className="register__date">Date Of Birth</h5>
             <div className="row">
-              <select className='select1'>
-                <option disabled>{null}</option>
-              </select>
+                 <select className='ricky'>
+
+                 </select>
             </div>
             <h5 className="register__gender">Gender</h5>
             <div className="register__radiocontainer"
@@ -130,10 +130,5 @@ class Register extends Component {
       </div>
     );
   }
-  componentDidMount()
-  {
-    
-  }
 }
-
 export default Register;

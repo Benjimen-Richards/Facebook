@@ -19,9 +19,29 @@ const userSchema = new mongoose.Schema({
     },
     dob:{
         type:String,
-        required:true
     },
-    friends:[{type:Object}]  
+    fullname:{
+        type:String
+    },
+    friendrequest:[{
+        id:String
+    }],
+    friends:[{type:Object}]  ,
+    likes:[
+        {
+            likes:{
+                type:Number
+            },
+            comment:{
+                type:Number
+            },
+            commentdescriptionL:{
+                type:String
+            },
+        },
+        
+    ]
+
 })
 const user = mongoose.model('userdata',userSchema)
 module.exports =user

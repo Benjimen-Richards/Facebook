@@ -23,6 +23,7 @@
   background-color: #fff;
   text-align: center;
   margin-bottom: 50px;
+  /* z-index: -1; */
 }
 
 .register__container > h3 {
