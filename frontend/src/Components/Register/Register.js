@@ -69,10 +69,11 @@ class Register extends Component {
             </center>
             <h5 className="register__date">Date Of Birth</h5>
             <div className="row">
-              <input type='date' name='dob' onChange={this.changehandler}/>
+              <select className='select1'>
+                <option disabled>{null}</option>
+              </select>
             </div>
             <h5 className="register__gender">Gender</h5>
-
             <div className="register__radiocontainer"
              onChange={this.radiohandler}>
               <div className="wrapper">
@@ -128,6 +129,10 @@ class Register extends Component {
         </form>
       </div>
     );
+  }
+  componentDidMount()
+  {
+    
   }
 }
 
